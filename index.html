@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .calculator {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+            box-shadow: 0px 0px 10px 0px #ccc;
+        }
+        #display {
+            width: 100%;
+            height: 50px;
+            text-align: right;
+            font-size: 2em;
+            margin-bottom: 10px;
+            padding-right: 10px;
+            box-sizing: border-box;
+        }
+        .button {
+            width: 70px;
+            height: 70px;
+            font-size: 1.5em;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            border: none;
+        }
+        .button:active {
+            background-color: #ccc;
+        }
+        .operator {
+            background-color: #f0a500;
+        }
+        .operator:active {
+            background-color: #d49000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <br>
+        <button class="button" onclick="appendNumber('1')">1</button>
+        <button class="button" onclick="appendNumber('2')">2</button>
+        <button class="button" onclick="appendNumber('3')">3</button>
+        <button class="button operator" onclick="chooseOperation('+')">+</button>
+        <br>
+        <button class="button" onclick="appendNumber('4')">4</button>
+        <button class="button" onclick="appendNumber
